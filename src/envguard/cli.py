@@ -87,7 +87,7 @@ def render_markdown(report: Report) -> str:
     ]
     if report.missing:
         out += ["", "### Missing", ""]
-        out += [f"- `{m['name']}` — used at {', '.join(f'`{l}`' for l in m['used_at'][:3])}"
+        out += [f"- `{m['name']}` — used at {', '.join(f'`{loc}`' for loc in m['used_at'][:3])}"
                 for m in d["missing"]]
     if report.secrets:
         out += ["", "### Possible secrets", ""]

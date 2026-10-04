@@ -6,7 +6,7 @@ import json
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from envguard.scanner import EnvReference, FRAMEWORK_BUILTINS, parse_env_file, scan_sources
+from envguard.scanner import FRAMEWORK_BUILTINS, EnvReference, parse_env_file, scan_sources
 from envguard.secrets import SecretFinding, scan_for_secrets
 
 

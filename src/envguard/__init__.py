@@ -2,17 +2,17 @@
 
 __version__ = "0.3.0"
 
-from envguard.scanner import EnvReference, scan_sources, parse_env_file
-from envguard.secrets import SecretFinding, scan_for_secrets
 from envguard.report import Report, build_report
+from envguard.scanner import EnvReference, parse_env_file, scan_sources
+from envguard.secrets import SecretFinding, scan_for_secrets
 
 __all__ = [
     "EnvReference",
-    "scan_sources",
-    "parse_env_file",
-    "SecretFinding",
-    "scan_for_secrets",
     "Report",
-    "build_report",
+    "SecretFinding",
     "__version__",
+    "build_report",
+    "parse_env_file",
+    "scan_for_secrets",
+    "scan_sources",
 ]
