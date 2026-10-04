@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "envguard"
+dynamic = ["version"]
+description = "Catch .env drift and hardcoded secrets before they ship. Zero dependencies."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+keywords = ["dotenv", "secrets", "linter", "security", "ci", "devtools"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+envguard = "envguard.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov", "ruff"]
+
+[tool.hatch.version]
+path = "src/envguard/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/envguard"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py39"
