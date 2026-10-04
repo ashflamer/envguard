@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "Catch .env drift and hardcoded secrets before they ship. Zero dependencies."
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 keywords = ["dotenv", "secrets", "linter", "security", "ci", "devtools"]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -38,7 +38,7 @@ addopts = "-q"
 
 [tool.ruff]
 line-length = 110
-target-version = "py39"
+target-version = "py310"
 
 # Pin the rule set explicitly. Without this, ruff lints with whatever its
 # current defaults are, so a new release can turn a green CI red without a

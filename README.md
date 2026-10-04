@@ -3,7 +3,7 @@
 **Catch `.env` drift and hardcoded secrets before they ship.** Zero dependencies, one command, CI-friendly exit codes.
 
 [![CI](https://github.com/ashflamer/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/ashflamer/envguard/actions/workflows/ci.yml)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Dependencies: 0](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](pyproject.toml)
 
